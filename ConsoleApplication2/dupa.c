@@ -4,7 +4,7 @@ int main() {
 
 		int i;
 		for (i = 0; i < (sizeof(dupa) / sizeof(dupa[0])); i++) {
-			printf(dupa[i]);
+			printf("%c\n",dupa[i]);
 		};
 	return 0;
 }
