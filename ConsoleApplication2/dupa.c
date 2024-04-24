@@ -5,12 +5,12 @@ void znajdz_litere(char* str, char litera) {
     char* ptr = str;
     int znaleziono = 0;
     int i;
-    for (i = 0; i < (sizeof(str)/sizeof(str)); i++) {
+    for (ptr = str; *ptr != '\0'; ptr++) {
         if (*ptr == litera) {
             printf("Znaleziono literê '%c' na pozycji: %ld\n", litera, ptr - str);
             znaleziono = 1;
         }
-        ptr++;
+        
     }
     if (!znaleziono) {
         printf("Litera '%c' nie zosta³a znaleziona w ci¹gu.\n", litera);
